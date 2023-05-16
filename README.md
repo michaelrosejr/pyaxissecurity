@@ -15,15 +15,15 @@ urllib3 >= 1.15.1
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com//.git
+pip install https://github.com/michaelrosejr/pyaxissecurity.git
 ```
 
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com//.git`)
+(you may need to run `pip` with root permission: `sudo pip install https://github.com/michaelrosejr/pyaxissecurity.git`)
 
 Then import the package:
 
 ```python
-import swagger_client
+import pyaxissecurity
 ```
 
 ### Setuptools
@@ -39,7 +39,7 @@ python setup.py install --user
 Then import the package:
 
 ```python
-import swagger_client
+import pyaxissecurity
 ```
 
 ## Getting Started
@@ -49,19 +49,19 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import pyaxissecurity
+from pyaxissecurity.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: OAuthBearerToken
-configuration = swagger_client.Configuration()
+configuration = pyaxissecurity.Configuration()
 configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Authorization'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ApplicationGroupsApi(swagger_client.ApiClient(configuration))
-application_group_model = swagger_client.ApplicationGroupModelV1() # ApplicationGroupModelV1 |
+api_instance = pyaxissecurity.ApplicationGroupsApi(pyaxissecurity.ApiClient(configuration))
+application_group_model = pyaxissecurity.ApplicationGroupModelV1() # ApplicationGroupModelV1 |
 
 try:
     # Create a New Application Group
