@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pyaxissecurity"
+version = "0.1.1"
+description = ""
+authors = ["Michael Rose Jr. <michael.rose@hpe.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+certifi = "^14.05.14"
+six = "^1.10"
+python-dateutil = "^2.5.3"
+urllib3 = "^1.15.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+rich = "^13.3.3"
+pydantic = "^1.10.7"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
